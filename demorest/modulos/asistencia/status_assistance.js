@@ -1,6 +1,6 @@
 const dbCon = require("../Configuracion/Config");
 
-function listaAsistencia(req,res,next){
+function listaEstatusAsistencia(req,res,next){
     dbCon.any('SELECT * FROM status_assistance')
     .then(function(data)
     {
@@ -14,5 +14,5 @@ function listaAsistencia(req,res,next){
 
 
 module.exports = {
-    listaAsistencia: listaAsistencia
+    listaEstatusAsistencia: listaEstatusAsistencia
 }
